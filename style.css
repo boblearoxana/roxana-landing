@@ -65,8 +65,9 @@ nav {
 .nav-toggle {
     display: none;
     flex-direction: column;
+    align-items: center;
     cursor: pointer;
-    gap: 6px;
+    gap: 4px;
 }
 
 .nav-toggle span {
