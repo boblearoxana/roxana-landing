@@ -46,7 +46,7 @@ a {
 
 /* Header */
 header {
-    padding: 20px 0;
+    padding: 12px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -98,10 +98,11 @@ nav {
 }
 
 .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
+    padding: 0;
 }
 
 .nav-links a:hover {
@@ -143,7 +144,7 @@ nav {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 60px;
     position: relative;
 }
 
@@ -430,25 +431,26 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 50px;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
         gap: 0;
-        padding: 20px 0;
+        padding: 0;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
 
     .nav-links.active {
-        max-height: 400px;
+        max-height: 300px;
     }
 
     .nav-links a {
-        padding: 15px 20px;
+        padding: 12px 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.8rem;
     }
 
     .language-switcher {
@@ -466,7 +468,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .hero { padding-top: 80px; }
+    .hero { padding-top: 50px; }
     .hero p { font-size: 0.95rem; margin-bottom: 20px; }
     .hero-btns { display: flex; flex-direction: column; gap: 10px; }
     .numbers-grid { grid-template-columns: 1fr; }
